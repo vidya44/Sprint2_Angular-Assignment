@@ -1,0 +1,16 @@
+<h2 style="color:white">Login Form</h2>
+<br><br>
+<form #userLogin="ngForm" [formGroup]="loginForm" (ngSubmit)="loginUser(userLogin.value)" [ngModel]>
+    <input type="text" name="username" placeholder="Enter Username" formControlName="user" [ngModel]>
+    <br/>
+    <span style="color: red;" *ngIf="user && user.invalid && user.touched" >This field is not valid</span>
+    <br>
+    <input type="password" name="password" placeholder="Enter Password" formControlName="password" [ngModel]>
+    <br/>
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched" >This field is not valid</span>
+    <br><br>
+    <button class="btn btn secondary" type="button" (click)="loginUser(userLogin.value)">Login</button>
+</form>
+<br><br><br>
+<app-welcome *ngIf="k" [msgFromParent]="username"></app-welcome>
+<router-outlet></router-outlet>
