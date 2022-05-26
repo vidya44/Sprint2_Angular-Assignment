@@ -1,0 +1,28 @@
+p{
+    text-align: center;
+    background-color: lightblue;
+}
+
+img{
+    margin-top: 10px;
+    width: 10%;
+    height: 10%;
+    padding-left:45%;
+    
+    /* padding-inline-end:50%; */
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size:50px;
+    font-weight:bolder;
+    color:white;
+   
+}
+a{
+    text-align: center;
+    font-size: 20px;
+    font-weight:bolder;
+    color:white;
+    
+}
